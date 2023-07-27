@@ -59,71 +59,71 @@ import {
   
   export const stats = [
     {
-      value: "",
+      value: "4",
       text: 'Architecture',
     },
     {
-      value: '',
+      value: '4',
       text: 'Landscaping',
     },
     {
-      value: '',
+      value: '4',
       text: 'Master planning',
     },
     {
-      value: '',
+      value: '4',
       text: 'Interior design',
     },
   ];
   
   export const features = {
     image: <Features1Img />,
-    title: 'We Create your home more aesthetic',
+    title: 'About Us',
     subtitle:
       'Furniture power is a software as services for multipurpose business management system',
     buttonText: 'Show Now',
     items: [
       {
         icon: <IoIosCheckmarkCircle />,
-        title: 'Valuation Services',
+        title: 'Designing',
         subtitle:
           'Sometimes features require a short description.  This can be detailed description',
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        title: 'Development of Furniture Models',
+        title: 'Costing',
         subtitle:
           'Sometimes features require a short description.  This can be detailed description',
       },
     ],
     feature2: {
       image: <Features2Img />,
-      title: 'The Best Furniture Manufacturer of your choice',
+      title: 'Construction',
       subtitle:
         'Furnitre power is a software as services for multiperpose business management system, expecially for them who are running two or more business exploree the future Furnitre power is a software as services.',
     },
   };
   
   export const newInStore = {
-    title: 'New In Store Now',
+    title: 'Our Services',
     subtitle: 'Get the latest items immediately with promo prices',
     link: 'Check all',
     icon: <IoIosArrowRoundForward />,
     products: [
       {
-        name: 'chair',
+        name: 'Master planning',
         image: <ChairImg />,
       },
       {
-        name: 'bed',
+        name: 'Architectural design',
         image: <BedImg />,
       },
       {
-        name: 'cupboard',
+        name: 'Interior Design',
         image: <CupboardImg />,
       },
       {
-        name: 'lighting',
+        name: 'Landscaping',
         image: <LightingImg />,
       },
     ],
