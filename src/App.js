@@ -5,6 +5,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Services from './components/Services';
 import Footer from './components/Footer';
+import Projects from './components/Projects';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Home/>
         <About/>
         <Services/>
+        <Projects/>
         <Footer/>
         
     </div>

@@ -5,8 +5,8 @@ function About() {
   const { title, subtitle, image,  items } = features;
 
   return (
-    <section className="section">
-      <div className="container mx-auto">
+    <section className="section ">
+      <div className="container mx-auto  ">
         {/* {image} */}
         <div className="flex flex-col lg:flex-row lg:gap-x-10">
           
