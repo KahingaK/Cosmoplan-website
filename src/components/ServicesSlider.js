@@ -14,7 +14,7 @@ function ServicesSlider() {
     <Swiper grabCursor= {true} breakpoints= {{
         320: {
             slidesPerView: 1,
-            spaceBetween:20,
+            spaceBetween:40,
         }
     }}>
       {ourServices.services.map((service, index) => {
