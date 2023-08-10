@@ -1,50 +1,54 @@
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
-import "../slider.css"
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { projectsData } from '../data';
 
-import { Navigation, Pagination } from 'swiper'
-import {products} from "../data"
-import { HiPlus } from "react-icons/hi";
-
+import 'swiper/swiper-bundle.min.css'; // Import Swiper styles
+import SwiperCore, { Navigation } from 'swiper'; // Import Swiper modules
+SwiperCore.use([Navigation]); // Initialize Navigation module
 
 function ProjectSlider() {
 
-    const {pages} = products
 
   return (
-    <Swiper modules = {[Pagination, Navigation]} navigation={true} pagination = {{clickable:true}} className = "productSlider min-h-[1300px] " >
-        {pages.map((page, index) => {
-            return (
-               <SwiperSlide key = {index}>
-               <div className='grid grid-cols-2 gap-x-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-[30px]'>
-                {page.productList.map((product, index) => {
-                    const { image, name, price, oldPrice} = product
-                    return (
-                        <div className='w-full max-w-[290px] h-[380px] text-left' key={index}>
-                            <div className='border hover:border-accent rounded-[18px] w-full max-w-[285px] h-full  max-h-[292px] flex items-center justify-center mb-[15px] relative transition'>
-                                <img src={image.type} alt = ""/>
-                                <div className='absolute  bottom-4 righr-[22px bg-gray-200 w-8 h-8 rounded-full ]'>
-                                    <HiPlus className='text-xl text-primary'/>
-                                </div>
+    <div className="flex justify-center">
+      <Swiper
+        grabCursor={true}
+        navigation={true} // Enable navigation arrows
+        breakpoints={{
+          320: { slidesPerView: 1, spaceBetween: 20 }, // Adjust spaceBetween as needed
+          // Add more breakpoints if necessary
+        }}
+      >
+        {projectsData.map((project, index) => (
+          <SwiperSlide key={index}>
+            <div className="w-full">
+              <div
+                className="relative flex flex-col items-center justify-center shadow-md rounded-md p-4"
+                style={{
+                  backgroundImage: `url('${project.image}')`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+              >
+                <div className="w-40 h-40 relative z-10">
+                  <img
+                    src={project.image}
+                    alt=""
 
-                            </div>
-                            <div className='font-semibold lg:text-xl'>{name}</div>
-                            <div className='flex items-center gap-x-3'>{price}</div>
-                            <div className='text-[15px] text-grey ' >{oldPrice}</div>
-                        </div>
-                    )
-                })}
-               </div>
-
-               </SwiperSlide> 
-            )
-        }
-        )}
-    </Swiper>
-  )
+                  />
+                </div>
+                <div className="mt-4 relative z-10">
+                  <h2 className="text-lg font-semibold text-black">
+                    {project.title}
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
 }
 
-export default ProjectSlider
+export default ProjectSlider;

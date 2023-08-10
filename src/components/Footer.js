@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../assets/img/logo.svg';
+import Logo from '../assets/img/logo1.png';
 import { footer } from '../data';
 
 function Footer() {
@@ -8,7 +8,7 @@ function Footer() {
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row justify-between border-b border-opacity-75 border-gray-700 pb-7 lg:pb-14 mb-14'>
           <a className='mb-6 lg:mb-0 lg:self-center' href='#'>
-            <img src={Logo} alt="" />
+            <img className = " h-16 lg:h-18" src={Logo} alt="" />
           </a>
           <div className='flex gap-x-4 justify-center lg:justify-end'>
             {footer.social.map((item, index) => {
