@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { home } from "../data";
 import Stats from "./Stats";
-import {Link} from "react-scroll"
+// import {Link} from "react-scroll"
 
 function Home() {
 
@@ -20,7 +20,7 @@ function Home() {
    useEffect(() => {
     const interval = setInterval(updateBackgroundImage, 8000);
     return () => clearInterval(interval);
-  }, []);
+  });
 
   // Get the current background image class name
   const currentBgClass = backgroundImages[currentBgIndex];

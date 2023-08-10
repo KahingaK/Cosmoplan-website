@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 function Services() {
-  const { title, subtitle, link, icon } = ourServices;
+  const { title, subtitle, link } = ourServices;
   return (
 
       <section name="about" className="section">
