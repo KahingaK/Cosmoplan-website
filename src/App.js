@@ -1,25 +1,23 @@
-
-import './App.css';
-import Home from './components/Home';
-import Header from './components/Header';
-import About from './components/About';
-import Services from './components/Services';
-import Footer from './components/Footer';
-import Projects from './components/Projects';
-
+import About from "./components/About";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import ServiceDetails from "./components/ServiceDetails";
 
 function App() {
   return (
-    <div className="w-full max-w-[1200px] mx-auto bg-white">
-        
-        <Header/>  
-        <Home/>
-        <About/>
-        <Services/>
-        <Projects/>
-        <Footer/>
-        
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<LandingPage />}></Route>
+
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/service/:serviceName" element={<ServiceDetails />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
