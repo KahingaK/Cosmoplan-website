@@ -24,7 +24,7 @@ function Header() {
     >
       <div className="container mx-auto  lg:px-4 ">
         <div className=" flex justify-between items-center lg:px-6">
-          <a href="#">
+          <a href="https://github.com/">
             <div className="h-6 lg:h-8">
             
               <img
