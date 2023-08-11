@@ -51,7 +51,7 @@ function ProjectSlider() {
                       <img src={project.images[0]} alt="" />
                     </div>
                     <div className="mt-4 relative z-10">
-                      <h2 className="text-lg font-semibold text-black">
+                      <h2 className="text-lg font-semibold mb-4 text-black">
                         {project.title}
                       </h2>
                     </div>
