@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import ServiceDetails from "./components/ServiceDetails";
+import ProjectDetail from "./components/ProjectDetail";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 
         <Route path="/about" element={<About />}></Route>
         <Route path="/service/:serviceName" element={<ServiceDetails />} />
+        <Route path="/project/:titleName/:projectId" element={<ProjectDetail/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

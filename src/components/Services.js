@@ -10,7 +10,7 @@ function Services() {
 
       <section name="about" className="section">
         <div className="container mx-auto pt-5">
-          <div className="flex flex-col lg:flex-row space-x-4 ">
+          <div className="flex flex-col lg:flex-row space-x-4">
             {/* [text] */}
             <div className="flex-1 flex flex-col items-center md:items-start gap-y-6 md:gap-y-12 mb-6 lg:mb-0 lg:items-baseline lg:gap-x-6 lg:max-w-[245px] lg:mt-[2px] lg:mb-[90px]">
               <h2 className="title text-2xl lg:text-4xl">{title}</h2>
@@ -21,7 +21,7 @@ function Services() {
                   
                   to="/about"
                 >
-               <button className="cursor-pointer hover:scale-90 items-center font-medium transition-all rounded-lg  bg-red-500 text-white py-2 px-6">
+               <button className="cursor-pointer hover:scale-110 items-center font-medium transition-all rounded-lg bg-red-500 text-white py-2 px-6">
   {link}
 </button>
 
