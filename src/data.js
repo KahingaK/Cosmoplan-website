@@ -36,7 +36,7 @@ import {
       href: 'projects',
     },
     {
-      name: 'contact',
+      name: 'contact us',
       href: 'contact',
     },
   ];

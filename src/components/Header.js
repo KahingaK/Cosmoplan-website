@@ -19,7 +19,7 @@ function Header() {
   return (
     <header
       className={`${
-        bg ? "bg-[#4B5B84] py-4 lg:py-6" : "bg-none"
+        bg ? "bg-[#386480] py-4 lg:py-6" : "bg-none"
       } fixed left-0 w-full py-8 z-10 transition-all duration-200`}
     >
       <div className="container mx-auto  lg:px-4 ">
@@ -44,8 +44,9 @@ function Header() {
             <ul className="md:flex md:gap-x-12">
               {navigation.map((item, index) =>  (
                   <li key={index}
-                  className="capitalize cursor-pointer text-white hover:scale-105 duration-200">
-                    <Link
+                  className={`capitalize cursor-pointer hover:scale-105 duration-200 ${
+                  index === navigation.length - 1 ? "text-white  bg-[#c1121f] px-5 py-0.5 rounded-md " : "text-white"
+                  }`}> <Link
                       
                       to={item.href} smooth duration={500}>
                       {item.name}
