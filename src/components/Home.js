@@ -31,7 +31,7 @@ function Home() {
 
 
   return (
-    <section name = "home"  className={`h-[638px] w-full ${currentBgClass} bg-right bg-cover bg-no-repeat text-white pt-[120px] pb-[140px] relative mb-12 lg:bg-center lg:mb-28 transition-all duration-1000`}
+    <section name = "home"  className={`h-[638px] w-full ${currentBgClass} bg-right bg-cover bg-no-repeat text-white pt-[120px] pb-[140px] relative mb-12 lg:bg-center lg:mb-4 transition-all duration-1000`}
     >
       <div  className="container mx-auto text-center">
         <h1 className="text-2xl mx-auto font-semibold mb-[50px] lg:text-[48px] leading-tight lg:max-w-[888px] text-shadow-lg">

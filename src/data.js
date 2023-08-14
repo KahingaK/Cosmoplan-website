@@ -168,58 +168,80 @@ import {
       image: <Family/>,
       title: 'Family homes',
      
-      // projects: [
-      //   {
-      //     title: 'Project 1',
-      //     images: [
-      //       '../assets/img/project1-1.jpg',
-      //       '../assets/img/project1-2.jpg',
-      //       '../assets/img/project1-3.jpg',
-      //     ],
-      //     description: 'This is the description of project 1.',
-      //     budget: '$100,000',
-      //     location: 'City A',
-      //   },
-      //   // Add more projects for 'Family homes' as needed
-      // ],
+      projects: [
+        {
+          title: 'Project 1',
+          images: [
+            '../assets/img/project1-1.jpg',
+            '../assets/img/project1-2.jpg',
+            '../assets/img/project1-3.jpg',
+          ],
+          description: 'This is the description of project 1.',
+          budget: '$100,000',
+          location: 'City A',
+        },
+        // Add more projects for 'Family homes' as needed
+      ],
     },
     {
       id: 2,
       title: 'Commercials',
       image: <Commercial/>,
-      // projects: [
-      //   {
-      //     title: 'Project 1',
-      //     images: [
-      //       '../assets/img/project2-1.jpg',
-      //       '../assets/img/project2-2.jpg',
-      //       '../assets/img/project2-3.jpg',
-      //     ],
-      //     description: 'This is the description of project 1.',
-      //     budget: '$200,000',
-      //     location: 'City B',
-      //   },
-      //   // Add more projects for 'Commercials' as needed
-      // ],
+      projects: [
+        {
+          title: 'Project 1',
+          images: [
+            '../assets/img/project2-1.jpg',
+            '../assets/img/project2-2.jpg',
+            '../assets/img/project2-3.jpg',
+          ],
+          description: 'This is the description of project 1.',
+          budget: '$200,000',
+          location: 'City B',
+        },
+        {
+          title: 'Project 2',
+          images: [
+            '../assets/img/project2-1.jpg',
+            '../assets/img/project2-2.jpg',
+            '../assets/img/project2-3.jpg',
+          ],
+          description: 'This is the description of project 1.',
+          budget: '$200,000',
+          location: 'City B',
+        },
+        {
+          title: 'Project 3',
+          images: [
+            '../assets/img/project2-1.jpg',
+            '../assets/img/project2-2.jpg',
+            '../assets/img/project2-3.jpg',
+          ],
+          description: 'This is the description of project 1.',
+          budget: '$200,000',
+          location: 'City B',
+        },
+        // Add more projects for 'Commercials' as needed
+      ],
     },
     {
       id: 3,
       title: 'Institutions',
       image: <Institution/>,
-      // projects: [
-      //   {
-      //     title: 'Project 1',
-      //     images: [
-      //       '../assets/img/project3-1.jpg',
-      //       '../assets/img/project3-2.jpg',
-      //       '../assets/img/project3-3.jpg',
-      //     ],
-      //     description: 'This is the description of project 1.',
-      //     budget: '$300,000',
-      //     location: 'City C',
-      //   },
-      //   // Add more projects for 'Institutions' as needed
-      // ],
+      projects: [
+        {
+          title: 'Project 1',
+          images: [
+            '../assets/img/project3-1.jpg',
+            '../assets/img/project3-2.jpg',
+            '../assets/img/project3-3.jpg',
+          ],
+          description: 'This is the description of project 1.',
+          budget: '$300,000',
+          location: 'City C',
+        },
+        // Add more projects for 'Institutions' as needed
+      ],
     },
     // Add more titles and projects as needed
   ];

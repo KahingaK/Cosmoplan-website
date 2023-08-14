@@ -18,31 +18,34 @@ SwiperCore.use([Pagination]);
 function ServicesSlider() {
   return (
     <Swiper
-      grabCursor={true}
-      pagination={{ clickable: true }} // Enable pagination
-      breakpoints={{
-        320: {
-          slidesPerView: "auto", // Display all slides
-          centeredSlides: true, // Centered slides
-          spaceBetween: 20,
-        },
-      }}
-    >
-      {ourServices.services.map((service, index) => {
-        return (
-          <SwiperSlide className="max-w-[256px]" key={index}>
-            <Link to={`/service/${service.name.toLowerCase()}`}>
-              <div className="relative transition duration-300 hover:scale-75">
-                <img src={service.image.type} alt="" />
-                <div className="absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize ">
-                  {service.name}
-                </div>
+    grabCursor={true}
+    pagination={{ clickable: true }} // Enable pagination
+    effect="fade" // Add the fade effect
+    loop={true} // Enable loop
+    loopedSlides={ourServices.services.length} // Set the loopedSlides count
+    breakpoints={{
+      320: {
+        slidesPerView: "auto", // Display all slides
+        centeredSlides: true, // Centered slides
+        spaceBetween: 20,
+      },
+    }}
+  >
+    {ourServices.services.map((service, index) => {
+      return (
+        <SwiperSlide className="max-w-[256px]" key={index}>
+          <Link to={`/service/${service.name.toLowerCase()}`}>
+            <div className="relative transition duration-300 hover:scale-75">
+              <img src={service.image.type} alt="" />
+              <div className="absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize ">
+                {service.name}
               </div>
-            </Link>
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
+            </div>
+          </Link>
+        </SwiperSlide>
+      );
+    })}
+  </Swiper>
   );
 }
 

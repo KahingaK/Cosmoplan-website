@@ -4,7 +4,7 @@ import {Link} from "react-scroll"
 
 function NavMobile() {
   return (
-    <div className='bg-white w-full h-full shadow-2xl'>
+    <div className='bg-white w-[250px] h-full shadow-2xl'>
         <ul className='text-center h-full flex flex-col items-center justify-center gap-y-6`'>
             {navigation.map((item, index) => 
             (

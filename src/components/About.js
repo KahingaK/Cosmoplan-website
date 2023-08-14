@@ -8,7 +8,7 @@ function About() {
     <section className="section ">
       <div className="container mx-auto  ">
         {/* {image} */}
-        <div className="flex flex-col lg:flex-row lg:gap-x-10">
+        <div className="flex flex-col lg:flex-row lg:gap-x-10 pt-8">
           
           {/* {text} */}
           <div className="flex-1 flex flex-col justify-end order-1 lg:order-2 mt-6 lg:mt-0">
