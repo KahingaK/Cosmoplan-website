@@ -50,11 +50,11 @@ import {
   export const stats = [
     {
       value: '300 +',
-      text: 'Buildings built',
+      text: 'Projects built',
     },
     {
-      value: "1996",
-      text: 'Year of Registration',
+      value: "25+",
+      text: 'Years of Experience',
     },
     {
       value: '2014',

@@ -7,7 +7,7 @@ function Stats() {
     const isLargeScreen = window.innerWidth >= 1024;
 
   return (
-    <div className={`bg-[#386480] opacity-75 rounded-lg p-[36px] ${
+    <div className={`bg-[#386480] opacity-80 rounded-lg p-[36px] ${
       isLargeScreen ? "absolute w-[75%] bottom-6 left-4" : ""
     } `}>
       <div className="flex flex-wrap gap-y-8 ">
