@@ -9,7 +9,7 @@ function Stats() {
   return (
     <div className={`bg-[#4B5B84] rounded-lg p-[36px] ${
       isLargeScreen ? "absolute w-[75%] bottom-6 left-4" : ""
-    } box-shadow-md  `}>
+    } box-shadow-md    `}>
       <div className="flex flex-wrap gap-y-8 ">
         {stats.map((item, index)=> {
           return (

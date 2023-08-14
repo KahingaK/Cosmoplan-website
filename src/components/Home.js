@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { home } from "../data";
 import Stats from "./Stats";
-// import {Link} from "react-scroll"
 
 function Home() {
 
@@ -39,7 +38,7 @@ function Home() {
         </h1>
         <div className=" ">
           {" "}
-          <h2 className="mb-[20px] max-w-[627px] mx-auto lg:mb-[40px] lg:text-lg text-shadow-md box-shadow-md">
+          <h2 className="mb-[20px] max-w-[627px] mx-auto lg:mb-[40px] lg:text-lg text-shadow-md">
             {subtitle}
           </h2>
           <button className="bg-[rgba(225,225,225,0.4)] hover:bg-[rgba(225,225,225,0.5)] px-[35px] py-[9px] mb-[60px] text-lg rounded-md backdrop-blur-md transition lg:px-[80px] lg:py-[12px] lg:mb-[70px]">

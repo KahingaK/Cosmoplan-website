@@ -4,7 +4,7 @@ import Logo from "../assets/img/logo1.png";
 import { CgMenuRight, CgClose } from "react-icons/cg";
 import { navigation } from "../data";
 import NavMobile from "./NavMobile";
-import {  Link  } from "react-router-dom";
+import {  Link  } from "react-scroll";
 
 function Header() {
   const [bg, setBg] = useState(false);
@@ -47,7 +47,7 @@ function Header() {
                   className="capitalize cursor-pointer text-white hover:scale-105 duration-200">
                     <Link
                       
-                      to = "/">
+                      to={item.href} smooth duration={500}>
                       {item.name}
                     </Link>
                   </li>

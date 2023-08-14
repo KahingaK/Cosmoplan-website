@@ -150,6 +150,19 @@ import {
         //   // Add more projects for Landscaping
         // ],
       },
+      {
+        name: 'Environmental Impact Assessment',
+        image: <LightingImg />,
+        // projects: [
+        //   {
+        //     projectName: 'Project 4',
+        //     projectImage: <YourProjectImageComponent4 />,
+        //     projectDescription: 'Description for Project 4',
+        //   },
+        //   // Add more projects for Landscaping
+        // ],
+      },
+      
     ],
   };
   export const projects = {
