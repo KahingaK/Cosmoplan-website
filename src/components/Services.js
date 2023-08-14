@@ -21,7 +21,7 @@ function Services() {
                   
                   to="/about"
                 >
-               <button className="cursor-pointer hover:scale-110 items-center font-medium transition-all rounded-lg bg-red-500 text-white py-2 px-6">
+               <button className="cursor-pointer hover:scale-110 items-center font-medium transition-all rounded-lg bg-[#c1121f] text-white py-2 px-6">
   {link}
 </button>
 
