@@ -1,7 +1,7 @@
 import React from "react";
 import { ourServices } from "../data";
 import ServicesSlider from "./ServicesSlider";
-import { Link } from "react-router-dom";
+import {Link as RouterLink} from "react-router-dom"
 
 
 function Services() {
@@ -16,7 +16,7 @@ function Services() {
               <h2 className="title text-2xl lg:text-4xl">{title}</h2>
               <p className="text-base lg:text-lg max-w-[360px]">{subtitle}</p>
               <div className="flex items-center mt-6 lg:mt-0">
-                <Link
+                <RouterLink
 
                   
                   to="/about"
@@ -27,7 +27,7 @@ function Services() {
 
 
                  
-                </Link>
+                </RouterLink>
                 
               </div>
             </div>
