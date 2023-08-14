@@ -4,7 +4,7 @@ import { footer } from '../data';
 
 function Footer() {
   return (
-    <footer className='section bg-[#4B5B84] text-white'>
+    <footer className='section bg-[#386480] text-white'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row justify-between border-b border-opacity-75 border-gray-700 pb-7 lg:pb-14 mb-14'>
           <a className='mb-6 lg:mb-0 lg:self-center' href='https://github.com/'>
