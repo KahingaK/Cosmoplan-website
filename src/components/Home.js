@@ -37,7 +37,7 @@ function Home() {
         <h1 className="text-2xl mx-auto font-semibold mb-[50px] lg:text-[48px] leading-tight lg:max-w-[888px] text-shadow-lg fadeInScale">
           {title}
         </h1>
-        <div className="fadeInScale ">
+        <div className="fadeInScale flex flex-col ">
           {" "}
           <h2 className="mb-[20px] max-w-[627px] mx-auto lg:mb-[40px] lg:text-lg text-shadow-md">
             {subtitle}
