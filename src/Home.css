@@ -13,4 +13,21 @@
   .fadeInScale {
     animation: fadeInScale 1s ease-in-out;
   }
+
+
+ @keyframes fadeInUp {
+  0% {
+    opacity: 0.5;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 2s ease-in-out;
+}
+
   

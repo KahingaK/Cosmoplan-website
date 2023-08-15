@@ -14,8 +14,8 @@ import {
   import Institution from './assets/img/institution.png';
   import Features1Img from './assets/img/features-1.png';
   import Features2Img from './assets/img/features-2.png';
-  import ChairImg from './assets/img/chair.png';
-  import BedImg from './assets/img/bed.png';
+  import ArchImg from './assets/img/arch.png';
+  import MasterImg from './assets/img/master.png';
   import CupboardImg from './assets/img/cupboard.png';
   import LightingImg from './assets/img/lighting.png';
 
@@ -105,7 +105,7 @@ import {
     services: [
       {
         name: 'Master planning',
-        image: <ChairImg />,
+        image: <MasterImg />,
         // projects: [
         //   {
         //     projectName: 'Project 1',
@@ -117,7 +117,7 @@ import {
       },
       {
         name: 'Architectural design',
-        image: <BedImg />,
+        image: <ArchImg />,
         // projects: [
         //   {
         //     projectName: 'Project 2',

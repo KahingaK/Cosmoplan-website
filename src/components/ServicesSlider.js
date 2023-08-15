@@ -33,7 +33,7 @@ function ServicesSlider() {
         <SwiperSlide className="max-w-[256px]" key={index}>
           <Link to={`/service/${service.name.toLowerCase()}`}>
             <div className="relative transition duration-300 hover:scale-95">
-              <img src={service.image.type} alt="" />
+              <img src={service.image.type} alt="" className="rounded-lg"/>
               <div className="absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize ">
                 {service.name}
               </div>
