@@ -34,7 +34,7 @@ function ServicesSlider() {
           <Link to={`/service/${service.name.toLowerCase()}`}>
             <div className="relative transition duration-300 hover:scale-95">
               <img src={service.image.type} alt="" className="rounded-lg"/>
-              <div className="absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize ">
+              <div className="absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize text-shadow-md ">
                 {service.name}
               </div>
             </div>

@@ -16,8 +16,9 @@ import {
   import Features2Img from './assets/img/features-2.png';
   import ArchImg from './assets/img/arch.png';
   import MasterImg from './assets/img/master.png';
-  import CupboardImg from './assets/img/cupboard.png';
-  import LightingImg from './assets/img/lighting.png';
+  import IntImg from './assets/img/int.png';
+  import LandImg from "./assets/img/land.png"
+  import EnvImg from './assets/img/envia.png';
 
   
 
@@ -128,20 +129,8 @@ import {
         // ],
       },
       {
-        name: 'Interior Design',
-        image: <CupboardImg />,
-        // projects: [
-        //   {
-        //     projectName: 'Project 3',
-        //     projectImage: <YourProjectImageComponent3 />,
-        //     projectDescription: 'Description for Project 3',
-        //   },
-        //   // Add more projects for Interior Design
-        // ],
-      },
-      {
         name: 'Landscaping',
-        image: <LightingImg />,
+        image: <LandImg />,
         // projects: [
         //   {
         //     projectName: 'Project 4',
@@ -152,8 +141,21 @@ import {
         // ],
       },
       {
-        name: 'Environmental Impact Assessment',
-        image: <LightingImg />,
+        name: 'Interior Design',
+        image: <IntImg />,
+        // projects: [
+        //   {
+        //     projectName: 'Project 3',
+        //     projectImage: <YourProjectImageComponent3 />,
+        //     projectDescription: 'Description for Project 3',
+        //   },
+        //   // Add more projects for Interior Design
+        // ],
+      },
+      
+      {
+        name: 'Environmental Audit',
+        image: <EnvImg />,
         // projects: [
         //   {
         //     projectName: 'Project 4',
