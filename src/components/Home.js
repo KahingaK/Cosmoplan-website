@@ -34,20 +34,25 @@ function Home() {
       className={`h-[638px] w-full ${currentBgClass} bg-right bg-cover bg-no-repeat text-white pt-[120px] pb-[140px] relative mb-12 lg:bg-center lg:mb-4 transition-all duration-1000`}
     >
       <div className="container mx-auto text-center">
-        <h1 className="text-2xl mx-auto font-semibold mb-[50px] lg:text-[48px] leading-tight lg:max-w-[888px] text-shadow-lg fadeInScale">
+      <div>
+      <div className="border-t-8 border-x-4 w-[50%] h-12 m-auto"></div>
+      <h1 className="text-2xl mx-auto font-semibold mt-[15px] mb-[15px] lg:text-[48px] leading-tight lg:max-w-[888px] text-shadow-lg fadeInScale">
           {title}
         </h1>
         <div className="fadeInScale flex flex-col ">
           {" "}
-          <h2 className="mb-[20px] max-w-[627px] mx-auto lg:mb-[40px] lg:text-lg text-shadow-md">
+          <h2 className="mb-[10px] max-w-[627px] mx-auto lg:mb-[40px] lg:text-lg text-shadow-md">
             {subtitle}
           </h2>
           <Link to="projects" smooth duration={500}>
-            <button className="bg-[rgba(225,225,225,0.4)] hover:bg-[rgba(225,225,225,0.5)] px-[35px] py-[9px] mb-[60px] text-lg rounded-md backdrop-blur-md transition lg:px-[80px] lg:py-[12px] lg:mb-[70px] fadeInUp">
+            <button className="bg-[rgba(225,225,225,0.4)] hover:bg-[rgba(225,225,225,0.5)] px-[35px] py-[9px] text-lg rounded-md backdrop-blur-md transition lg:px-[80px] lg:py-[12px] lg:mb-[5px] fadeInUp">
               {buttonText}
             </button>
           </Link>
         </div>
+        <div className="border-b-8 border-x-4 w-[50%] h-12 center m-auto mb-10 "></div>
+      </div>
+        
 
         <div>
           <Stats />

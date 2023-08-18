@@ -23,7 +23,7 @@ function Header() {
       } fixed left-0 w-full py-8 z-10 transition-all duration-200`}
     >
       <div className="container mx-auto  lg:px-4 ">
-        <div className=" flex justify-between items-center lg:px-6">
+        <div className=" flex justify-between items-center lg:px-5">
           <a href="https://github.com/">
             <div className="h-6 lg:h-8">
             
