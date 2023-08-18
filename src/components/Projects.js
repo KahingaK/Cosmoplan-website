@@ -3,10 +3,10 @@ import { projects } from "../data"
 import ProjectSlider from "./ProjectSlider";
 
 
+
 function Projects() {
   const { title, subtitle } = projects;
-
-  
+    
 
   return (
     <section name = "projects"  className="section text-center">
