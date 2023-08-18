@@ -35,7 +35,7 @@ function Home() {
     >
       <div className="container mx-auto text-center">
       <div>
-      <div className="border-t-8 border-x-4 w-[50%] h-12 m-auto"></div>
+      <div className="border-t-8 border-x-4 w-[75%] lg:w-[50%] h-12 m-auto"></div>
       <h1 className="text-2xl mx-auto font-semibold mt-[15px] mb-[15px] lg:text-[48px] leading-tight lg:max-w-[888px] text-shadow-lg fadeInScale">
           {title}
         </h1>
@@ -50,7 +50,7 @@ function Home() {
             </button>
           </Link>
         </div>
-        <div className="border-b-8 border-x-4 w-[50%] h-12 center m-auto mb-10 "></div>
+        <div className="border-b-8 border-x-4 w-[75%]  lg:w-[50%] h-12 center m-auto mb-10 "></div>
       </div>
         
 
