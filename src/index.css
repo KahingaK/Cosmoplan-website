@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 
 /* Hide the scrollbar track */
 ::-webkit-scrollbar-track {
