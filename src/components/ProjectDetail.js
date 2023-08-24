@@ -7,8 +7,16 @@ function ProjectDetail() {
     const title = projectsData.find((t) => t.title.toLowerCase() === titleName);
     const project = title.projects[projectId];
   return (
-    <div>
-      <h2>{project.title}</h2>
+    <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col"> <p>{project.image}</p>
+        </div>
+        <div className="flex flex-col"> 
+        <h2>{project.title}</h2>
+          
+          <p>{project.description}</p>
+          <p>{project.budget}</p>
+          </div>
+    
       {/* Render other project details here */}
     </div>
   );

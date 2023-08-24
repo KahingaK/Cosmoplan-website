@@ -29,6 +29,9 @@ function About() {
      
         {/* {image} */}
         <div className="flex flex-col lg:flex-row lg:gap-x-10 pt-8">
+        <div className="flex-1 order-2 lg:order-1">
+            <img src={image.type} alt="" className="w-full h-auto rounded-3xl " />
+          </div>
          
           
           {/* {text} */}
@@ -51,9 +54,7 @@ function About() {
               })}
             </div>
           </div>
-          <div className="flex-1 order-2 lg:order-1">
-            <img src={image.type} alt="" className="w-full h-auto rounded-3xl " />
-          </div>
+          
         </div>
       </div>
     </section>
