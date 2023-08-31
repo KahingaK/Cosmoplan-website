@@ -19,7 +19,9 @@ import {
   import IntImg from './assets/img/int.png';
   import LandImg from "./assets/img/land.png"
   import EnvImg from './assets/img/envia.png';
-  import frontViewImage from './assets/img/Bungalow/frontView.jpg';
+  import fImage1 from './assets/img/Bungalow/Bung-2.jpg';
+   import fImage2 from './assets/img/Bungalow/Bung-1.jpg';
+   import fImage3 from './assets/img/Bungalow/Bung-3.jpg';
 // import project1Image1 from '../assets/img/project1-2.jpg';
 // import project1Image2 from '../assets/img/project1-3.jpg';
   
@@ -191,8 +193,8 @@ import {
       projects: [
         {
           title: 'Project 1',
-          images: [frontViewImage],
-          description: 'This is the description of project 1.',
+          images: [fImage1, fImage2,fImage3],
+          description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
           budget: '$100,000',
           location: 'City A',
         },
