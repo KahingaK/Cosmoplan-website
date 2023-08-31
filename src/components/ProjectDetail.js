@@ -19,14 +19,14 @@ function ProjectDetail() {
   return (
     <div className="flex flex-col lg:flex-row pt-16 ">
       <div className="flex flex-col lg:w-1/2">
-        <div className=" shadow-lg p-4">
+        <div className=" rounde-md shadow-lg p-6">
           <img
             src={project.images[0]}
             alt={project.title}
-            className=" rounded-md lg:h-auto"
+            className=" rounded-lg lg:h-auto"
           />
         </div>
-        <div className="shadow-lg p-4">
+        <div className="rounded-lg shadow-lg p-6">
           <img
             src={project.images[1]}
             alt={project.title}
@@ -35,25 +35,26 @@ function ProjectDetail() {
         </div>
        
       </div>
-      <div className="flex flex-col lg:w-1/2 p-4">
-        <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
-        <p className="mb-2">{project.description}</p>
-        
-        <div className="flex flex-row">
+      <div className="flex flex-col lg:w-1/2 justify-center items-left p-6">
+        <h2 className="text-2xl font-semibold mb-4">{project.title}</h2>
+        <div className="flex flex-row pb-4">
           <p className="pr-2 font-medium "> Location: </p>
           <p>{project.location}</p>
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-row pb-4">
           <p className="pr-2 font-medium ">Budget: </p>
           <p>{project.budget}</p>
         </div>
+        <p className="mb-2">{project.description}</p>
+        
+        
         <div className="flex flex-row">
         <div className="p-4">
       <button
           className="flex cursor-pointer hover:scale-110 items-center font-medium transition-all rounded-lg bg-[#c1121f] text-white py-2 px-6"
           onClick={handleGoBack}
         >
-          &lt; Back to Home
+          Back to Home
         </button>
       </div>
       <div className="p-4">
@@ -61,7 +62,7 @@ function ProjectDetail() {
           className="flex cursor-pointer hover:scale-110 items-center font-medium transition-all rounded-lg bg-[#c1121f] text-white py-2 px-6"
           onClick={handleGoBack}
         >
-          &lt; Ask for a quote
+           Ask for a quote
         </button>
       </div>
 

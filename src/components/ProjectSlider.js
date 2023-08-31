@@ -38,7 +38,7 @@ function ProjectSlider() {
         {activeCategoryData.projects.map((project, index) => (
           <div key={index}>
             <Link to={`/project/${activeCategory.toLowerCase()}/${index}`}>
-              <div className="relative shadow-md rounded-md p-4">
+              <div className="relative shadow-md rounded-md p-2 bg-[]">
                
                 <img src={project.images[0]} alt="" className="rounded-lg" />
                 <div className="absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize text-shadow-md ">
