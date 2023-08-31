@@ -47,7 +47,7 @@ function ProjectDetail() {
           <p className="pr-2 font-medium ">Budget: </p>
           <p>{project.budget}</p>
         </div>
-        <div className="flex flex row">
+        <div className="flex flex-row">
         <div className="p-4">
       <button
           className="flex cursor-pointer hover:scale-110 items-center font-medium transition-all rounded-lg bg-[#c1121f] text-white py-2 px-6"
