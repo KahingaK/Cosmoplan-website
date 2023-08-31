@@ -19,6 +19,10 @@ import {
   import IntImg from './assets/img/int.png';
   import LandImg from "./assets/img/land.png"
   import EnvImg from './assets/img/envia.png';
+  import frontViewImage from './assets/img/Bungalow/frontView.jpg';
+// import project1Image1 from '../assets/img/project1-2.jpg';
+// import project1Image2 from '../assets/img/project1-3.jpg';
+  
 
   
 
@@ -187,11 +191,7 @@ import {
       projects: [
         {
           title: 'Project 1',
-          images: [
-            '../assets/img/project1-1.jpg',
-            '../assets/img/project1-2.jpg',
-            '../assets/img/project1-3.jpg',
-          ],
+          images: [frontViewImage],
           description: 'This is the description of project 1.',
           budget: '$100,000',
           location: 'City A',

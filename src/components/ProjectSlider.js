@@ -45,11 +45,14 @@ function ProjectSlider() {
               >
                 <div className="shadow-md rounded-md p-4">
                   <div
-                    className="w-40 h-40 mb-4"
+                    className="w-40 h-40 mb-4 rounded-md"
                     style={{
-                      backgroundImage: `url('${project.images[0]}')`,
-                      backgroundSize: 'cover',
+                      backgroundImage: `url(${project.images[0]})`,
+                      backgroundSize: "cover",
                       backgroundPosition: 'center',
+                      width: "100%"
+                      
+                    
                     }}
                   />
                   <h2 className="text-lg font-semibold text-black">
