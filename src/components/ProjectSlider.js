@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // import { Swiper, SwiperSlide } from 'swiper/react';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { projectsData } from "../data";
 
 function ProjectSlider() {
@@ -23,8 +23,8 @@ function ProjectSlider() {
               key={category.title}
               className={`mx-2 px-4 py-2 rounded-md ${
                 activeCategory === category.title
-                  ? 'bg-[#c1121f] text-white'
-                  : 'bg-gray-300 text-gray-600'
+                  ? "bg-[#c1121f] text-white"
+                  : "bg-gray-300 text-gray-600"
               }`}
               onClick={() => handleCategoryChange(category.title)}
             >
@@ -35,34 +35,19 @@ function ProjectSlider() {
       </div>
 
       <div className="w-full mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-       
-        
-          {activeCategoryData.projects.map((project, index) => (
-            <div key={index}>
-              <Link
-                to={`/project/${activeCategory.toLowerCase()}/${index}`}
-                className="block"
-              >
-                <div className="shadow-md rounded-md p-4">
-                  <div
-                    className="w-40 h-40 mb-4 rounded-md"
-                    style={{
-                      backgroundImage: `url(${project.images[0]})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: 'center',
-                      width: "100%"
-                      
-                    
-                    }}
-                  />
-                  <h2 className="text-lg font-semibold text-black">
-                    {project.title}
-                  </h2>
+        {activeCategoryData.projects.map((project, index) => (
+          <div key={index}>
+            <Link to={`/project/${activeCategory.toLowerCase()}/${index}`}>
+              <div className="relative shadow-md rounded-md p-4">
+               
+                <img src={project.images[0]} alt="" className="rounded-lg" />
+                <div className="absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize text-shadow-md ">
+                  {project.title}
                 </div>
-              </Link>
-            </div>
-          ))}
-       
+              </div>
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -1,30 +1,17 @@
 import React from "react";
 import { features } from "../data";
-import { useNavigate } from "react-router-dom";
+
 
 function About() {
   const { title, subtitle, image,  items } = features;
 
-  // Use the useNavigate hook
-  const navigate = useNavigate(); 
-  
-// Redirect to the home page
-  const handleGoBack = () => {
-    navigate("/"); 
-  };
+ 
 
   return (
     <section className="section ">
     
       <div className="container mx-auto  ">
-      <div>
-      <button
-          className="text-blue-500 hover:underline mb-4"
-          onClick={handleGoBack}
-        >
-          &lt; Back to Home
-        </button>
-      </div>
+      
      
      
         {/* {image} */}
