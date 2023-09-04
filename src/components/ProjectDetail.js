@@ -54,7 +54,7 @@ function ProjectDetail() {
           className="flex cursor-pointer hover:scale-110 items-center font-medium transition-all rounded-lg bg-[#c1121f] text-white py-2 px-6"
           onClick={handleGoBack}
         >
-          Back to Home
+              Back to Home
         </button>
       </div>
       <div className="p-4">

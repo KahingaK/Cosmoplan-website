@@ -45,7 +45,7 @@ function Home() {
             {subtitle}
           </h2>
           <Link to="projects" smooth duration={500}>
-            <button className="bg-[rgba(225,225,225,0.4)] hover:bg-[rgba(225,225,225,0.5)] px-[35px] py-[9px] text-lg rounded-md backdrop-blur-md transition lg:px-[80px] lg:py-[12px] lg:mb-[5px] fadeInUp">
+            <button className="bg-[rgba(225,225,225,0.4)] hover:bg-[rgba(225,225,225,0.5)] px-[35px] py-[9px] text-lg rounded-md backdrop-blur-md transition lg:px-[80px] lg:py-[12px] lg:mb-[5px]">
               {buttonText}
             </button>
           </Link>
