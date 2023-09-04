@@ -31,7 +31,7 @@ module.exports = {
       },
       backgroundImage: {
         home: 'url("/src/assets/img/bg-2.jpg")',
-        home2: 'url("/src/assets/img/hero-bg.png")',
+        home2: 'url("/src/assets/img/Bungalow/4.jpg")',
         newsletter: 'url("/src/assets/img/newsletter.png")',
       },
       dropShadow: {
