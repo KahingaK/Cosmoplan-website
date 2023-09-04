@@ -16,7 +16,7 @@ function Home() {
     setCurrentBgIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
   };
 
-  // Set interval to change the background image every 5 seconds (adjust as needed)
+  // Set interval to change the background image every 5 seconds
   useEffect(() => {
     const interval = setInterval(updateBackgroundImage, 8000);
     return () => clearInterval(interval);
