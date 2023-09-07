@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
-import { FreeMode} from 'swiper/modules';
+import { FreeMode, Navigation} from 'swiper/modules';
 
 
 // Import Swiper styles
@@ -26,7 +26,7 @@ function ProjectSlider({ projectsData }) {
   return (
     <div className="flex flex-col items-center">
       <div className="w-full">
-      <div className="mt-4 flex-1 max-w-[600px] xl:max-w-[990px] mx-auto">
+      <div className="mt-4 mb-4 flex-1 max-w-[600px] xl:max-w-[990px] mx-auto">
           <Swiper 
         breakpoints={{
       320: {
@@ -35,10 +35,11 @@ function ProjectSlider({ projectsData }) {
       },
     }}
         freeMode={true}
+        navigation={true}
         pagination={{
           clickable: true,
         }}
-        modules={[FreeMode]}
+        modules={[FreeMode, Navigation,]}
         className="mySwiper"
 
         grabCursor={true}
@@ -47,7 +48,7 @@ function ProjectSlider({ projectsData }) {
       >
       {projectsData.map((category, index) => {
         return (
-          <SwiperSlide className="max-w-[35%] mx-auto" key={index}>
+          <SwiperSlide className="max-w-[256px] mx-auto" key={index}>
           <button
               key={category.title}
               className={`mx-2 px-4 py-2 rounded-md ${

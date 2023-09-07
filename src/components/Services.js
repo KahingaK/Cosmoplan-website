@@ -21,7 +21,7 @@ function Services() {
               </div>
             </div>
             {/* {slider} */}
-            <div className=" flex-1 max-w-[600px] xl:max-w-[990px]">
+            <div className=" flex-1 mx-auto max-w-[600px] xl:max-w-[990px]">
               <ServicesSlider />
             </div>
            
