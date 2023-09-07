@@ -4,12 +4,13 @@ import Logo from "../assets/img/logo1.png";
 import { CgMenuRight, CgClose } from "react-icons/cg";
 import { navigation } from "../data";
 import NavMobile from "./NavMobile";
-import {  Link  } from "react-scroll";
+import {  Link  } from "react-router-dom";
 
 function Header() {
   const [bg, setBg] = useState(false);
   const [mobileNav, setMobileNav] = useState(false);
 
+  //Show navbar on scroll
   useEffect(() => {
     window.addEventListener("scroll", () => {
       return window.scrollY > 50 ? setBg(true) : setBg(false);
@@ -24,7 +25,7 @@ function Header() {
     >
       <div className="container mx-auto  lg:px-4 ">
         <div className=" flex justify-between items-center lg:px-5">
-          <a href="https://github.com/">
+          <a href="/">
             <div className="h-6 lg:h-8">
             
               <img
@@ -48,7 +49,7 @@ function Header() {
                   index === navigation.length - 1 ? "text-white  bg-[#c1121f] px-5 py-0.5 rounded-md " : "text-white"
                   }`}> <Link
                       
-                      to={item.href} smooth duration={500}>
+                      to={item.href}>
                       {item.name}
                     </Link>
                   </li>
