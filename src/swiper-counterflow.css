@@ -1,0 +1,23 @@
+/* swiper-counterflow.css */
+
+/* Set initial opacity to 0 for all slides */
+.swiper-slide {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+/* Set the active slide to full opacity */
+.swiper-slide-active {
+  opacity: 1;
+}
+
+/* Translate active slide and next slide to create counterflow effect */
+.swiper-slide-next {
+  transform: translateX(-50%);
+}
+
+/* Translate active slide and previous slide to create counterflow effect */
+.swiper-slide-prev {
+  transform: translateX(50%);
+}

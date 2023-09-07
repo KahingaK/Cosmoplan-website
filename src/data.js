@@ -9,9 +9,7 @@ import {
   } from 'react-icons/io';
   
   // import images
-  import Family from './assets/img/family-home.png';
-  import Commercial from './assets/img/commercial.png';
-  import Institution from './assets/img/institution.png';
+ 
   import Features1Img from './assets/img/features-1.png';
   import Features2Img from './assets/img/features-2.png';
   import ArchImg from './assets/img/arch.png';
@@ -187,7 +185,7 @@ import {
   export const projectsData = [
     {
       id: 1,
-      image: <Family/>,
+      
       title: 'Family homes',
      
       projects: [
@@ -204,7 +202,7 @@ import {
     {
       id: 2,
       title: 'Commercials',
-      image: <Commercial/>,
+     
       projects: [
         {
           title: 'Project 1',
@@ -245,7 +243,7 @@ import {
     {
       id: 3,
       title: 'Institutions',
-      image: <Institution/>,
+      
       projects: [
         {
           title: 'Project 1',

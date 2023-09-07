@@ -1,11 +1,20 @@
 import React, { useState } from "react";
-// import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from "react-router-dom";
-import { projectsData } from "../data";
+import { Swiper, SwiperSlide } from 'swiper/react';
+// import required modules
+import { FreeMode} from 'swiper/modules';
 
-function ProjectSlider() {
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+
+
+function ProjectSlider({ projectsData }) {
+  // Set active cattegory
   const [activeCategory, setActiveCategory] = useState(projectsData[0].title);
 
+  
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
   };
@@ -17,9 +26,29 @@ function ProjectSlider() {
   return (
     <div className="flex flex-col items-center">
       <div className="w-full">
-        <div className="mt-4">
-          {projectsData.map((category) => (
-            <button
+      <div className="mt-4 flex-1 max-w-[600px] xl:max-w-[990px] mx-auto">
+          <Swiper 
+        breakpoints={{
+      320: {
+        slidesPerView: "auto", // Display all slides
+        spaceBetween: 10,
+      },
+    }}
+        freeMode={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode]}
+        className="mySwiper"
+
+        grabCursor={true}
+
+  
+      >
+      {projectsData.map((category, index) => {
+        return (
+          <SwiperSlide className="max-w-[35%] mx-auto" key={index}>
+          <button
               key={category.title}
               className={`mx-2 px-4 py-2 rounded-md ${
                 activeCategory === category.title
@@ -30,7 +59,14 @@ function ProjectSlider() {
             >
               {category.title}
             </button>
-          ))}
+
+          </SwiperSlide>
+        )
+      }
+            
+          )}
+
+          </Swiper>
         </div>
       </div>
 
@@ -39,7 +75,6 @@ function ProjectSlider() {
           <div key={index}>
             <Link to={`/project/${activeCategory.toLowerCase()}/${index}`}>
               <div className="relative shadow-md rounded-md p-2 bg-[]">
-               
                 <img src={project.images[0]} alt="" className="rounded-lg" />
                 <div className="absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize text-shadow-md ">
                   {project.title}
@@ -49,6 +84,8 @@ function ProjectSlider() {
           </div>
         ))}
       </div>
+
+
     </div>
   );
 }

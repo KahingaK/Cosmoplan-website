@@ -2,9 +2,15 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { projectsData } from "../data"; // Import your data
 import { useNavigate } from "react-router-dom";
+import {Link} from "react-router-dom"
+
 
 function ProjectDetail() {
+
+  //Access route parameters from the URL
   const { titleName, projectId } = useParams();
+
+   // Find the title by lowercase comparison
   const title = projectsData.find((t) => t.title.toLowerCase() === titleName);
   const project = title.projects[projectId];
 
@@ -58,12 +64,12 @@ function ProjectDetail() {
         </button>
       </div>
       <div className="p-4">
-      <button
+     <Link to = "/contact" > <button
           className="flex cursor-pointer hover:scale-110 items-center font-medium transition-all rounded-lg bg-[#c1121f] text-white py-2 px-6"
-          onClick={handleGoBack}
+
         >
            Ask for a quote
-        </button>
+        </button></Link>
       </div>
 
         </div>
