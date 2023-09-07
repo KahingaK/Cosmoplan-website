@@ -1,6 +1,6 @@
 import React from 'react'
 import { navigation } from "../data";
-import {Link} from "react-scroll"
+import {Link} from "react-router-dom"
 
 function NavMobile() {
   return (
@@ -9,7 +9,7 @@ function NavMobile() {
             {navigation.map((item, index) => 
             (
                 <li className=' cursor-pointer  text-xl font-medium capitalize'  key={index}>
-                    <Link to={item.href} smooth duration={500}>{item.name}</Link>
+                    <Link to={item.href} >{item.name}</Link>
                 </li>
             )
               )}

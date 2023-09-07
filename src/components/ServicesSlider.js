@@ -1,10 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
-
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 // Import swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import 'swiper/css/effect-coverflow'
+
 
 
 
@@ -16,18 +18,21 @@ import { ourServices } from "../data";
 function ServicesSlider() {
   return (
     <Swiper
-    grabCursor={true}
-
-    effect="fade" // Add the fade effect
-    loop={false} // Disable loop
-    loopedSlides={ourServices.services.length} // Set the loopedSlides count
-    breakpoints={{
-      320: {
-        slidesPerView: "auto", // Display all slides
-        spaceBetween: 20,
-      },
-    }}
-  >
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={false}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+      >
     {ourServices.services.map((service, index) => {
       return (
         <SwiperSlide className="max-w-[256px]" key={index}>

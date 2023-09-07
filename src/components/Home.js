@@ -3,7 +3,9 @@ import { useState, useEffect } from "react";
 import { home } from "../data";
 import Stats from "./Stats";
 import { Link } from "react-scroll";
+
 import "../Home.css";
+
 
 function Home() {
   const [currentBgIndex, setCurrentBgIndex] = useState(0);
@@ -16,7 +18,7 @@ function Home() {
     setCurrentBgIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
   };
 
-  // Set interval to change the background image every 5 seconds (adjust as needed)
+  // Set interval to change the background image every 5 seconds
   useEffect(() => {
     const interval = setInterval(updateBackgroundImage, 8000);
     return () => clearInterval(interval);
@@ -44,7 +46,7 @@ function Home() {
           <h2 className="mb-[10px] max-w-[627px] mx-auto lg:mb-[40px] lg:text-lg text-shadow-md">
             {subtitle}
           </h2>
-          <Link to="projects" smooth duration={500}>
+          <Link to="projects" smooth duration={200}>
             <button className="bg-[rgba(225,225,225,0.4)] hover:bg-[rgba(225,225,225,0.5)] px-[35px] py-[9px] text-lg rounded-md backdrop-blur-md transition lg:px-[80px] lg:py-[12px] lg:mb-[5px]">
               {buttonText}
             </button>

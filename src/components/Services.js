@@ -1,12 +1,11 @@
 import React from "react";
 import { ourServices } from "../data";
 import ServicesSlider from "./ServicesSlider";
-import {Link as RouterLink} from "react-router-dom"
-import { RiArrowRightSLine } from "react-icons/ri"; 
+; 
 
 
 function Services() {
-  const { title, subtitle, link } = ourServices;
+  const { title, subtitle } = ourServices;
   return (
 
       <section name="about" className="section">
@@ -17,18 +16,7 @@ function Services() {
               <h2 className="title text-2xl lg:text-4xl">{title}</h2>
               <p className="text-base lg:text-lg max-w-[360px]">{subtitle}</p>
               <div className="flex items-center mt-6 lg:mt-0 shadow-black">
-                <RouterLink
-
-                  
-                  to="/about"
-                >
-               <button className="flex cursor-pointer hover:scale-110 items-center font-medium transition-all rounded-lg bg-[#c1121f] text-white py-2 px-6">
-               {link} <RiArrowRightSLine size = {20} className="mr-2" /> 
-      </button>
-
-
-                 
-                </RouterLink>
+               
                 
               </div>
             </div>

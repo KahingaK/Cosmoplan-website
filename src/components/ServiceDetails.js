@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { ourServices } from "../data"; // Import your data
 import { useNavigate } from "react-router-dom";
+import {Link} from "react-router-dom"
 
 function ServiceDetails() {
   // Use the useNavigate hook
@@ -63,12 +64,12 @@ function ServiceDetails() {
                 </button>
               </div>
               <div className="p-4">
-                <button
-                  className="flex cursor-pointer hover:scale-110 items-center font-medium transition-all rounded-lg bg-[#c1121f] text-white py-2 px-6"
-                  onClick={handleGoBack}
-                >
-                   Ask for a quote
-                </button>
+              <Link to = "/contact" > <button
+          className="flex cursor-pointer hover:scale-110 items-center font-medium transition-all rounded-lg bg-[#c1121f] text-white py-2 px-6"
+
+        >
+           Ask for a quote
+        </button></Link>
               </div>
             </div>
           </div>

@@ -1,11 +1,13 @@
 import React from "react";
 import { projects } from "../data"
 import ProjectSlider from "./ProjectSlider";
+import { projectsData } from "../data"; // Import your data
 
 
 
 function Projects() {
   const { title, subtitle } = projects;
+
     
 
   return (
@@ -17,7 +19,7 @@ function Projects() {
             {subtitle}
           </p>
         </div>
-       <ProjectSlider/>
+       <ProjectSlider projectsData = {projectsData}/>
       </div>
     </section>
   );
