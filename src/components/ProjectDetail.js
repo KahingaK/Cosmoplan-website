@@ -23,10 +23,10 @@ function ProjectDetail() {
      };
 
   return (
-    <div className="flex flex-col lg:flex-row pt-16 ">
+    <div  className="flex flex-col lg:flex-row pt-16 ">
       <div className="flex flex-col lg:w-1/2">
-        <div className=" rounde-md shadow-lg p-6">
-          <img
+        <div  className="  rounde-md shadow-lg p-6">
+          <img id= "top"
             src={project.images[0]}
             alt={project.title}
             className=" rounded-lg lg:h-auto"

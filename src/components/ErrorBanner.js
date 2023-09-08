@@ -3,7 +3,7 @@ import { CgClose } from "react-icons/cg";
 
 function ErrorBanner({ message, onClose }) {
   return (
-    <div className="bg-[#c1121f] text-white p-2 rounded-md text-center max-w-xs mx-auto flex">
+    <div className="bg- text-white p-2 rounded-md text-center max-w-xs mx-auto flex">
     <button onClick={onClose} className= " p-1 border-solid border-white ">
         <CgClose/>
       </button>
