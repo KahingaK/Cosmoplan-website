@@ -32,10 +32,10 @@ function Socials() {
           id: 3,
           child: (
             <>
-              <FaWhatsapp size={30}/> whatsapp
+              <FaWhatsapp size={30}/> Call us
             </>
           ),
-          href: "mailto:ikahinga@gmail.com",
+          href: "tel:+254712000200",
         },
         {
           id: 4,
@@ -93,7 +93,7 @@ function Socials() {
               <li
                 key={id}
                 className={
-                  "flex justify-between items-center w-40 h-14 px-4 mr-[-100px] bg-[#386480] hover:mr-[-10px] hover:rounded-md duration-300 " +
+                  "flex justify-between items-center w-40 h-14 px-4 mr-[-100px] bg-[#386480] lg:hover:mr-[-10px] hover:rounded-md duration-300 " +
                   " " +
                   style
                 }

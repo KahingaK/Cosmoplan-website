@@ -29,6 +29,7 @@ function ProjectDetail() {
           <img id= "top"
             src={project.images[0]}
             alt={project.title}
+            loading="lazy"
             className=" rounded-lg lg:h-auto"
           />
         </div>
@@ -36,6 +37,8 @@ function ProjectDetail() {
           <img
             src={project.images[1]}
             alt={project.title}
+            loading="lazy"
+
             className="rounded-md lg:h-auto"
           />
         </div>
