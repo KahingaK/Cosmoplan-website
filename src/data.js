@@ -12,14 +12,31 @@ import {
  
   import Features1Img from './assets/img/features-1.png';
   import Features2Img from './assets/img/features-2.png';
-  import ArchImg from './assets/img/arch.png';
-  import MasterImg from './assets/img/master.png';
-  import IntImg from './assets/img/int.png';
-  import LandImg from "./assets/img/land.png"
-  import EnvImg from './assets/img/envia.png';
-  import fImage1 from './assets/img/Bungalow/Bung-2.jpg';
-   import fImage2 from './assets/img/Bungalow/Bung-1.jpg';
-   import fImage3 from './assets/img/Bungalow/Bung-3.jpg';
+  import ArchImg from './assets/img/arch.jpg';
+  import MasterImg from './assets/img/master.jpg';
+  import IntImg from './assets/img/int.jpg';
+  import LandImg from "./assets/img/land.jpg"
+  import EnvImg from './assets/img/envia.jpg';
+  import fImage1 from './assets/img/jpgs/family/Bung-2.jpg';
+   import fImage2 from './assets/img/jpgs/family/Bung-1.jpg';
+   import f3Image1 from './assets/img/jpgs/family/mansionettes-2.jpg';
+   import f3Image2 from './assets/img/jpgs/family/mansionettes-1.jpg';
+   import f1Image1 from './assets/img/jpgs/family/flat-1.jpg';
+   import f1Image2 from './assets/img/jpgs/family/flat-1.jpg';
+   import f2Image1 from './assets/img/jpgs/family/man-1.jpg';
+   import f2Image2 from './assets/img/jpgs/family/man-2.jpg';
+   import cImage1 from './assets/img/jpgs/comm/ruiru-1.jpg';
+   import cImage2 from './assets/img/jpgs/comm/ruiru-2.jpg';
+   import c1Image1 from './assets/img/jpgs/comm/hotel-1.jpg';
+   import c1Image2 from './assets/img/jpgs/comm/hotel-2.jpg';
+   import c2Image1 from './assets/img/jpgs/comm/apt-1.jpg';
+   import c2Image2 from './assets/img/jpgs/comm/apt-2.jpg';
+   import iImage1 from './assets/img/jpgs/inst/church-1.jpg';
+   import iImage2 from './assets/img/jpgs/inst/church-2.jpg';
+
+  //  import serArchImg from './assets/img/architecture.jpg';
+  //  import serMaster from './assets/img/master2.jpg';
+  //  import serInter from './assets/img/inter.jpg';
 // import project1Image1 from '../assets/img/project1-2.jpg';
 // import project1Image2 from '../assets/img/project1-3.jpg';
   
@@ -191,7 +208,28 @@ import {
       projects: [
         {
           title: 'Project 1',
-          images: [fImage1, fImage2,fImage3],
+          images: [fImage2, fImage1],
+          description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
+          budget: '$100,000',
+          location: 'City A',
+        },
+        {
+          title: 'Project 1',
+          images: [f1Image2, f1Image1],
+          description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
+          budget: '$100,000',
+          location: 'City A',
+        },
+        {
+          title: 'Project 1',
+          images: [f2Image1, f2Image2],
+          description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
+          budget: '$100,000',
+          location: 'City A',
+        },
+        {
+          title: 'Project 1',
+          images: [f3Image1, f3Image2],
           description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
           budget: '$100,000',
           location: 'City A',
@@ -206,33 +244,21 @@ import {
       projects: [
         {
           title: 'Project 1',
-          images: [
-            '../assets/img/project2-1.jpg',
-            '../assets/img/project2-2.jpg',
-            '../assets/img/project2-3.jpg',
-          ],
+          images: [cImage1, cImage2],
           description: 'This is the description of project 1.',
           budget: '$200,000',
           location: 'City B',
         },
         {
           title: 'Project 2',
-          images: [
-            '../assets/img/project2-1.jpg',
-            '../assets/img/project2-2.jpg',
-            '../assets/img/project2-3.jpg',
-          ],
+          images: [c1Image2, c1Image1],
           description: 'This is the description of project 1.',
           budget: '$200,000',
           location: 'City B',
         },
         {
           title: 'Project 3',
-          images: [
-            '../assets/img/project2-1.jpg',
-            '../assets/img/project2-2.jpg',
-            '../assets/img/project2-3.jpg',
-          ],
+          images: [c2Image1, c2Image2],
           description: 'This is the description of project 1.',
           budget: '$200,000',
           location: 'City B',
@@ -246,15 +272,11 @@ import {
       
       projects: [
         {
-          title: 'Project 1',
-          images: [
-            '../assets/img/project3-1.jpg',
-            '../assets/img/project3-2.jpg',
-            '../assets/img/project3-3.jpg',
-          ],
+          title: 'Project 3',
+          images: [iImage1, iImage2],
           description: 'This is the description of project 1.',
-          budget: '$300,000',
-          location: 'City C',
+          budget: '$200,000',
+          location: 'City B',
         },
         // Add more projects for 'Institutions' as needed
       ],
