@@ -73,7 +73,6 @@ function Contact() {
         <div className="flex flex-col lg:flex-row h-full items-center justify-start pt-6 gap-x-8 text-center lg:tex-left">
           {/* bg */}
           <div className="hidden lg:flex bg-red absolute bottom-0 left-0 right-0 top-72 -z-10">
-            bg
           </div>
           {/* text and form */}
 

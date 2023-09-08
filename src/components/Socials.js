@@ -1,7 +1,7 @@
 import React, {useState , useEffect} from 'react'
-import { FaGithub, FaLinkedinIn , FaPhone} from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaWhatsapp, FaLinkedinIn ,FaAddressCard, FaPhone, FaMapMarkerAlt} from "react-icons/fa";
+
+
 
 function Socials() {
     // State to track visibility
@@ -23,16 +23,16 @@ function Socials() {
           id: 2,
           child: (
             <>
-               <FaGithub size={30} /> github
+               <FaMapMarkerAlt size={30} /> location
             </>
           ),
-          href: "https://github.com",
+          href: "https://www.google.com/maps/place/View+Park+Towers,+Utalii+St,+Nairobi/@-1.2827958,36.8134942,17z/data=!3m1!4b1!4m6!3m5!1s0x182f10d23912632b:0xa3e642f1ab7822a8!8m2!3d-1.2828012!4d36.8160691!16s%2Fg%2F11dykx5sv?entry=ttu",
         },
         {
           id: 3,
           child: (
             <>
-              <HiOutlineMail size={30}/> mail 
+              <FaWhatsapp size={30}/> whatsapp
             </>
           ),
           href: "mailto:ikahinga@gmail.com",
@@ -41,7 +41,7 @@ function Socials() {
           id: 4,
           child: (
             <>
-               <BsFillPersonLinesFill size={30} /> resume
+               <FaAddressCard size={30} /> Card
             </>
           ),
           href: "/Ivan kahinga CV, 2023 (1).docx.pdf",
@@ -81,7 +81,7 @@ function Socials() {
   return (
     <div>
      {isScroll && (
-        <button className="lg:flex flex-col top-[65%] right-0 fixed bg-[#386480] hover:bg-[#c1121f] text-white font-semibold py-4 px-4 rounded-full" onClick={() => setIsVisible(!isVisible)}>
+        <button className="lg:flex flex-col top-[80%] right-2 fixed bg-[#c1121f] hover:bg-[#386480] text-white font-semibold py-4 px-4 rounded-full" onClick={() => setIsVisible(!isVisible)}>
           <FaPhone size={24} className="mr-2" />
         </button>
       )}
