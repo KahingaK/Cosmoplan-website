@@ -81,7 +81,7 @@ function Socials() {
   return (
     <div>
      {isScroll && (
-        <button className="lg:flex flex-col top-[90%] right-4 fixed bg-[#c1121f] hover:bg-[#386480] text-white font-semibold py-4 px-4 rounded-full" onClick={() => setIsVisible(!isVisible)}>
+        <button className="lg:flex flex-col top-[85%] right-4 fixed bg-[#c1121f] hover:bg-[#386480] text-white font-semibold py-4 px-4 rounded-full" onClick={() => setIsVisible(!isVisible)}>
           <FaPhone size={24} className="mr-2" />
         </button>
       )}
