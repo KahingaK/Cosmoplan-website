@@ -1,8 +1,9 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 import { useRef, useState, useEffect } from "react";
-import { features } from "../data";
+import { contact } from "../data";
 import ErrorBanner from "./ErrorBanner";
+
 
 function Contact() {
   // Initialize error state
@@ -10,7 +11,7 @@ function Contact() {
   const [error, setError] = useState(null);
 
   //import image
-  const { image } = features;
+  const { image } = contact;
 
   const form = useRef();
   useEffect(() => {
