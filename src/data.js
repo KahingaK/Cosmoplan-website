@@ -11,7 +11,7 @@ import {
   // import images
  
   import Features1Img from './assets/img/features-1.png';
-  import Features2Img from './assets/img/features-2.png';
+  import Features2Img from './assets/img/footer.png';
   import ArchImg from './assets/img/arch.jpg';
   import MasterImg from './assets/img/master.jpg';
   import IntImg from './assets/img/int.jpg';
@@ -33,12 +33,11 @@ import {
    import c2Image2 from './assets/img/jpgs/comm/apt-2.jpg';
    import iImage1 from './assets/img/jpgs/inst/church-1.jpg';
    import iImage2 from './assets/img/jpgs/inst/church-2.jpg';
+   import Foot from './assets/img/footer.png';
+   import SerArchImg from './assets/img/architecture.jpg';
+   import SerMaster from './assets/img/master2.jpg';
+   import SerInter from './assets/img/inter.jpg';
 
-  //  import serArchImg from './assets/img/architecture.jpg';
-  //  import serMaster from './assets/img/master2.jpg';
-  //  import serInter from './assets/img/inter.jpg';
-// import project1Image1 from '../assets/img/project1-2.jpg';
-// import project1Image2 from '../assets/img/project1-3.jpg';
   
 
   
@@ -114,8 +113,7 @@ import {
     feature2: {
       image: <Features2Img />,
       title: 'Construction',
-      subtitle:
-        'Furnitre power is a software as services for multiperpose business management system, expecially for them who are running two or more business exploree the future Furnitre power is a software as services.',
+      
     },
   };
   
@@ -127,64 +125,44 @@ import {
     services: [
       {
         name: 'Master planning',
-        image: <MasterImg />,
-        // projects: [
-        //   {
-        //     projectName: 'Project 1',
-        //     projectImage: <YourProjectImageComponent1 />,
-        //     projectDescription: 'Description for Project 1',
-        //   },
-        //   // Add more projects for Master planning
-        // ],
+        image: <MasterImg />,        
+        projectName: 'Project 1',
+        projectImage: <SerMaster/>,
+        projectDescription: 'We specialize in master planning, a dynamic and strategic approach to shaping the future of communities and spaces. Our master planning services encompass a comprehensive process that involves the thoughtful integration of urban, architectural, and environmental design principles. Whether envisioning the development of a new neighborhood, a corporate campus, or revitalizing an existing urban area, our team of expert planners collaborates closely with clients to craft visionary, sustainable, and practical plans. By considering a wide range of factors, including land use, infrastructure, transportation, sustainability, and community engagement, we create blueprints that not only meet your goals but also promote long-term success and positive impact.',
+         
       },
       {
         name: 'Architectural design',
         image: <ArchImg />,
-        // projects: [
-        //   {
-        //     projectName: 'Project 2',
-        //     projectImage: <YourProjectImageComponent2 />,
-        //     projectDescription: 'Description for Project 2',
-        //   },
-        //   // Add more projects for Architectural design
-        // ],
+        projectName: 'Project 1',
+        projectImage: <SerArchImg/>,
+        projectDescription: 'we are passionate about architectural design, where artistry meets functionality to create stunning and purposeful spaces. Our architectural design services embody a harmonious blend of creativity, innovation, and functionality. Be it a new home, commercial building, or a renovation project, our dedicated team of architects and designers collaborates closely with clients to bring visions to life. We believe that great design should not only inspire but also serve the needs of its occupants. With a deep commitment to sustainability, aesthetics, and the latest technological advancements, we craft architectural designs that are not just visually striking but also environmentally responsible and efficient. Explore our portfolio to see how we transform ideas into extraordinary structures that stand as testaments to design excellence',
+       
       },
       {
         name: 'Landscaping',
         image: <LandImg />,
-        // projects: [
-        //   {
-        //     projectName: 'Project 4',
-        //     projectImage: <YourProjectImageComponent4 />,
-        //     projectDescription: 'Description for Project 4',
-        //   },
-        //   // Add more projects for Landscaping
-        // ],
+        projectName: 'Project 3',
+        projectImage: '',
+        projectDescription: 'We understand that outdoor spaces should be an extension of your personality and lifestyle, and our designs reflect this ethos. From selecting the perfect plantings and hardscape elements to incorporating sustainable practices and creating inviting outdoor living areas, we transform outdoor spaces into breathtaking and functional landscapes.',
+        
       },
       {
         name: 'Interior Design',
         image: <IntImg />,
-        // projects: [
-        //   {
-        //     projectName: 'Project 3',
-        //     projectImage: <YourProjectImageComponent3 />,
-        //     projectDescription: 'Description for Project 3',
-        //   },
-        //   // Add more projects for Interior Design
-        // ],
+        projectName: 'Project 3',
+        projectImage: <SerInter />,
+        projectDescription: 'we are dedicated to the art of interior design, where every space tells a unique story. Our interior design services are crafted to transform ordinary spaces into captivating, functional, and personalized environments. Whether envisioning the interior of your home, office, or commercial establishment, our team of experienced interior designers works closely with clients to understand their tastes, needs, and aspirations. We believe that the aesthetics and ambiance of a space profoundly influence the well-being of its occupants, and our designs reflect this philosophy. From selecting the perfect color palette and furnishings to optimizing spatial flow and integrating sustainable materials, we create interiors that are not only visually stunning but also harmoniously functional. ',
+         
       },
       
       {
         name: 'Environmental Audit',
         image: <EnvImg />,
-        // projects: [
-        //   {
-        //     projectName: 'Project 4',
-        //     projectImage: <YourProjectImageComponent4 />,
-        //     projectDescription: 'Description for Project 4',
-        //   },
-        //   // Add more projects for Landscaping
-        // ],
+        projectName: 'Project 3',
+        projectImage: '',
+        projectDescription: 'EIAs are a crucial component of responsible development and decision-making, and we excel in evaluating and mitigating the environmental consequences of various projects.  Our assessments not only fulfill regulatory requirements but also contribute to creating projects that are environmentally responsible, socially beneficial, and economically viable',
+        
       },
       
     ],
@@ -192,7 +170,7 @@ import {
   export const projects = {
     title: 'Our Projects',
     subtitle:
-      'The products we provide only for you as our service are selected from the best products with number 1 quality in the world',
+      'The products we provide only for you as our service are selected from the best products with number 1 quality in the world.',
    
         
       
@@ -283,6 +261,14 @@ import {
     },
     // Add more titles and projects as needed
   ];
+
+  export const contact = {
+    image: <Foot/>,
+    
+        
+      
+    
+  };
   
   
   
