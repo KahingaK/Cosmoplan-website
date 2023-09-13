@@ -1,13 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import required modules
-import { FreeMode, Navigation} from 'swiper/modules';
 
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/free-mode';
 
 
 function ProjectSlider({ projectsData }) {
@@ -26,29 +19,12 @@ function ProjectSlider({ projectsData }) {
   return (
     <div className="flex flex-col items-center">
       <div className="w-full">
-      <div className="mt-4 mb-4 flex-1 max-w-[600px] xl:max-w-[990px] mx-auto">
-          <Swiper 
-        breakpoints={{
-      320: {
-        slidesPerView: "auto", // Display all slides
-        spaceBetween: 10,
-      },
-    }}
-        freeMode={true}
-        navigation={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Navigation,]}
-        className="mySwiper"
-
-        grabCursor={true}
-
-  
-      >
+      <div>
+          <div className="mt-4 mb-4 flex flex-grow-1 flex-nowrap mx-auto"> 
+     
       {projectsData.map((category, index) => {
         return (
-          <SwiperSlide className="max-w-[256px] mx-auto" key={index}>
+          <div className="mx-auto" key={index}>
           <button
               key={category.title}
               className={`mx-2 px-4 py-2 rounded-md ${
@@ -61,13 +37,13 @@ function ProjectSlider({ projectsData }) {
               {category.title}
             </button>
 
-          </SwiperSlide>
+          </div>
         )
       }
             
           )}
 
-          </Swiper>
+          </div>
         </div>
       </div>
 

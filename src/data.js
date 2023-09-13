@@ -185,32 +185,32 @@ import {
      
       projects: [
         {
-          title: 'Project 1',
+          title: '4-Bedroom Mansionette',
           images: [fImage2, fImage1],
           description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
           budget: '$100,000',
-          location: 'City A',
+          location: 'Kenya',
         },
         {
-          title: 'Project 1',
+          title: '5-bedroom Townhouse ',
           images: [f1Image2, f1Image1],
           description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
           budget: '$100,000',
-          location: 'City A',
+          location: 'Kenya',
         },
         {
-          title: 'Project 1',
+          title: '6-bedroom, 2-DSQ mansion',
           images: [f2Image1, f2Image2],
           description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
           budget: '$100,000',
-          location: 'City A',
+          location: 'Runda, Kenya',
         },
         {
-          title: 'Project 1',
+          title: '4-Bedroom mansionettes(duplex)',
           images: [f3Image1, f3Image2],
           description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
           budget: '$100,000',
-          location: 'City A',
+          location: 'Syokimau, Kenya',
         },
         // Add more projects for 'Family homes' as needed
       ],
@@ -221,14 +221,14 @@ import {
      
       projects: [
         {
-          title: 'Project 1',
+          title: '1-bedroomed and 2-bedroomed units',
           images: [cImage1, cImage2],
           description: 'This is the description of project 1.',
           budget: '$200,000',
-          location: 'City B',
+          location: 'Ruiru, Kenya',
         },
         {
-          title: 'Project 2',
+          title: 'Hotel',
           images: [c1Image2, c1Image1],
           description: 'This is the description of project 1.',
           budget: '$200,000',
@@ -250,7 +250,7 @@ import {
       
       projects: [
         {
-          title: 'Project 3',
+          title: 'Church',
           images: [iImage1, iImage2],
           description: 'This is the description of project 1.',
           budget: '$200,000',
