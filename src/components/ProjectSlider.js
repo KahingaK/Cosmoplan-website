@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-
-
 function ProjectSlider({ projectsData }) {
   // Set active cattegory
   const [activeCategory, setActiveCategory] = useState(projectsData[0].title);
 
-  
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
   };
@@ -19,30 +16,27 @@ function ProjectSlider({ projectsData }) {
   return (
     <div className="flex flex-col items-center">
       <div className="w-full">
-      <div>
-          <div className="mt-4 mb-4 flex flex-grow-1 flex-nowrap mx-auto"> 
-     
-      {projectsData.map((category, index) => {
-        return (
-          <div className="mx-auto" key={index}>
-          <button
-              key={category.title}
-              className={`mx-2 px-4 py-2 rounded-md ${
-                activeCategory === category.title
-                  ? "bg-[#c1121f] text-white"
-                  : "bg-gray-300 text-gray-600"
-              }`}
-              onClick={() => handleCategoryChange(category.title)}
+        <div>
+          <div className="mt-4 mb-4 flex flex-grow-1 flex-nowrap mx-auto">
+            <select
+              className="mx-2 px-4 py-2 rounded-md "
+              onChange={(e) => handleCategoryChange(e.target.value)}
+              value={activeCategory}
             >
-              {category.title}
-            </button>
-
-          </div>
-        )
-      }
-            
-          )}
-
+              {projectsData.map((category, index) => (
+                <option
+                  key={category.title}
+                  value={category.title}
+                  className={`mx-2 px-4 py-2 rounded-md ${
+                    activeCategory === category.title
+                      ? "bg-[#c1121f] text-white"
+                      : "bg-gray-300 text-gray-600"
+                  }`}
+                >
+                  {category.title}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
       </div>
@@ -52,7 +46,12 @@ function ProjectSlider({ projectsData }) {
           <div key={index}>
             <Link to={`/project/${activeCategory.toLowerCase()}/${index}#top`}>
               <div className="relative shadow-md rounded-md p-2 bg-[]">
-                <img src={project.images[0]} alt="" loading="lazy" className="rounded-lg" />
+                <img
+                  src={project.images[0]}
+                  alt=""
+                  loading="lazy"
+                  className="rounded-lg"
+                />
                 <div className="absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize text-shadow-md ">
                   {project.title}
                 </div>
@@ -61,8 +60,6 @@ function ProjectSlider({ projectsData }) {
           </div>
         ))}
       </div>
-
-
     </div>
   );
 }
