@@ -49,7 +49,6 @@ function ProjectSlider({ projectsData }) {
                 <img
                   src={project.images[0]}
                   alt=""
-                  loading="lazy"
                   className="rounded-lg"
                 />
                 <div className="absolute text-white bottom-[20px] w-full text-center text-[18px] lg:text-2xl font-medium capitalize text-shadow-md ">
