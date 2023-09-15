@@ -10,6 +10,10 @@ function Footer() {
           <a className='mb-6 lg:mb-0 lg:self-center' href='https://github.com/'>
             <img className = " h-9 lg:h-18" src={Logo} alt="" loading="lazy"/>
           </a>
+          <ul>
+            <li>location</li>
+            <li>contact</li>
+          </ul>
           <div className='flex gap-x-4 justify-center lg:justify-end'>
             {footer.social.map((item, index) => {
               return (
