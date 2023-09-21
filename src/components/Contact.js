@@ -96,14 +96,14 @@ function Contact() {
                   name="from_name"
                   type="text"
                   placeholder="Your name"
-                  className="outline-none border-b-2 border-b-[#386480] h-[60%] bg-transparent font-semibold w-full pl-3 "
+                  className="outline-none border-b-2 border-b-[#386480] h-[60%] bg-transparent font-normal w-full pl-3 "
                 />
 
                 <input
                   name="from_email"
                   type="text"
                   placeholder="Your email.."
-                  className="outline-none border-b-2 border-b-[#386480] h-[60%] bg-transparent  font-semibold w-full pl-3 "
+                  className="outline-none border-b-2 border-b-[#386480] h-[60%] bg-transparent  font-normal w-full pl-3 "
                 />
               </div>
 
@@ -111,7 +111,7 @@ function Contact() {
                 name="message"
                 placeholder="Leave a message here..."
                 rows="10"
-                className="p-2 bg-transparent border-2 border-[#386480] rounded-md text-blacksdad focus:outline-none font-semibold"
+                className="p-2 bg-transparent border-2 border-[#386480] rounded-md text-black focus:outline-none font-normal"
               />
               <button
                 type="submit"

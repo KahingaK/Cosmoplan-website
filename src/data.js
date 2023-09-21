@@ -12,7 +12,7 @@ import {
   
   // import images
  
-  import Features1Img from './assets/img/features-1.png';
+  import Features1Img from './assets/img/about.jpg';
   import Features2Img from './assets/img/footer.png';
   import ArchImg from './assets/img/arch.jpg';
   import MasterImg from './assets/img/master.jpg';
