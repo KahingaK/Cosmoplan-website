@@ -1,12 +1,14 @@
 // import icons
 import {
-    IoLogoYoutube,
+   
     IoLogoFacebook,
-    IoLogoGithub,
-    IoLogoInstagram,
+    
+   
     IoIosCheckmarkCircle,
     IoIosArrowRoundForward,
   } from 'react-icons/io';
+
+  import { FaWhatsapp, FaLinkedinIn , FaMapMarkerAlt} from "react-icons/fa";
   
   // import images
  
@@ -275,15 +277,15 @@ import {
   export const footer = {
     social: [
       {
-        icon: <IoLogoYoutube />,
+        icon: <FaWhatsapp/>,
         href: '#',
       },
       {
-        icon: <IoLogoInstagram />,
+        icon: <FaMapMarkerAlt/>,
         href: '#',
       },
       {
-        icon: <IoLogoGithub />,
+        icon: <FaLinkedinIn  />,
         href: '#',
       },
       {
