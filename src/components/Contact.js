@@ -1,34 +1,19 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
-import { useRef, useState, useEffect } from "react";
+import { useRef} from "react";
 import { contact } from "../data";
-import ErrorBanner from "./ErrorBanner";
-
-
+import { toast } from 'react-toastify';
+  
 function Contact() {
-  // Initialize error state
 
-  const [error, setError] = useState(null);
 
   //import image
   const { image } = contact;
 
+  
+
   const form = useRef();
-  useEffect(() => {
-    let timeoutId;
-
-    if (error) {
-      // Set a timeout to hide the error banner after 3 seconds
-      timeoutId = setTimeout(() => {
-        setError(null);
-      }, 3000); // 3000 milliseconds (3 seconds)
-    }
-
-    // Clear the timeout when the component unmounts or when error changes
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, [error]);
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -43,26 +28,45 @@ function Contact() {
     if (!name || !email || !message) {
       // Handle the error, e.g., show an error message to the user
       console.error("Please fill in all fields.");
-      setError("Please fill in all fields.");
+      toast.error('Please fill in all fields.', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
       return; // Exit the function without sending the email
     }
 
     // If all fields are filled, send the email
     emailjs
       .sendForm(
-        "service_i6tcq5n",
-        "template_wddz79n",
+        "service_vyk8vse",
+        "template_w7239sw",
         form.current,
         "Do1vIelv9gzgnw0qw"
       )
       .then(
         (result) => {
           console.log(result.text);
+          toast.success('Message sent!', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
           e.target.reset();
         },
         (error) => {
           console.log(error.text);
-          setError(null);
+          
         }
       );
   };
@@ -80,16 +84,13 @@ function Contact() {
           <div className="lg:flex-1 lg:pt-32 px-4">
             <h1 className="title text-2xl lg:text-4xl">Contact Us</h1>
             <p className="text-base lg:text-lg ">Start your building journey</p>
-
+            
             <form
               ref={form}
               onSubmit={sendEmail}
               className="flex flex-col gap-y-4 py-4"
             >
-             {/* Show the error banner if there's an error */}
-      {error && (
-        <ErrorBanner message={error} onClose={() => setError(null)} />
-      )}
+            
               <div className="flex gap-x-10">
                 <input
                   name="from_name"
