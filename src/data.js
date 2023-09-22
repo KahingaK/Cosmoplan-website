@@ -286,11 +286,11 @@ import {
       },
       {
         icon: <FaLinkedinIn  />,
-        href: '#',
+        href: 'https://www.linkedin.com/company/cosmoplan-consultants/',
       },
       {
         icon: <IoLogoFacebook />,
-        href: '#',
+        href: 'https://www.facebook.com/profile.php?id=61551637924199&mibextid=ZbWKwL',
       },
     ],
     copyright: 'cosmoplan 2023 - All Rights Reserved.',
