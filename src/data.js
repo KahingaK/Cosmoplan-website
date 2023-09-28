@@ -172,7 +172,7 @@ import {
   export const projects = {
     title: 'Our Projects',
     subtitle:
-      'The products we provide only for you as our service are selected from the best products with number 1 quality in the world.',
+      'Sample projects handpicked to for their simplicity in design. Need a home just like this? Contuct us today! Architectural plan downloads available.',
    
         
       
