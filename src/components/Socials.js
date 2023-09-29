@@ -15,7 +15,7 @@ function Socials() {
                <FaLinkedinIn size={30} />
             </>
           ),
-          href: "https://linkedin.com",
+          href: "https://www.linkedin.com/company/cosmoplan-consultants",
           style: "rounded-tl-md",
         },
         {

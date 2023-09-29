@@ -172,7 +172,7 @@ import {
   export const projects = {
     title: 'Our Projects',
     subtitle:
-      'The products we provide only for you as our service are selected from the best products with number 1 quality in the world.',
+      'Sample projects handpicked to for their simplicity in design. Need a home just like this? Contuct us today! Architectural plan downloads available.',
    
         
       
@@ -189,32 +189,35 @@ import {
         {
           title: '4-Bedroom Mansionette',
           images: [fImage2, fImage1],
-          description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
-          budget: '$100,000',
+          description: "This 4-bedroom mansionette offers a spacious and comfortable living experience. This home provides ample room for family living. The main floor welcomes you into the cozy living area, a modern kitchen and a dining space that opens up to a private backyard, perfect for outdoor gatherings.Upstairs, you'll find four well-appointed bedrooms, each with its own closet space. The master bedroom boasts an ensuite bathroom for added convenience. The lower level can be customized to suit your needs, whether it's transformed into a home office, a gym, or a recreational space. With its simple yet functional design and roomy layout, this 4-bedroom mansionette is an ideal choice for those seeking a comfortable and stylish home.",
+           budget: '$100,000',
           location: 'Kenya',
         },
         {
           title: '5-bedroom Townhouse ',
           images: [f1Image2, f1Image1],
-          description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
+          description: `This exquisite 5-bedroom townhouse offers the perfect blend of elegance and convenience in a sought-after urban setting. Flexibility is key in this townhouse, with the lower level offering a versatile space that can be used as a home office, a media room, or a play area for kids.A highlight of this property would be its private outdoor space, whether it's a landscaped garden, a terrace, or the rooftop deck, providing an oasis of tranquility amidst the urban hustle and bustle.`,
           budget: '$100,000',
           location: 'Kenya',
         },
         {
           title: '6-bedroom, 2-DSQ mansion',
           images: [f2Image1, f2Image2],
-          description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
+          description: `This magnificent 6-bedroom mansion stands as a testament to grandeur and sophistication, offering unparalleled living in a prestigious neighborhood.The main level boasts an expansive layout, seamlessly connecting the formal living room, dining area, and a gourmet kitchen outfitted with top-of-the-line appliances. Oversized windows flood the space with natural light and provide panoramic views of the meticulously landscaped grounds. For added convenience, this mansion includes two domestic staff quarters (DSQs) that can be customized to suit the needs of your household staff or used as guest accommodations.
+
+          `,
           budget: '$100,000',
           location: 'Runda, Kenya',
         },
         {
           title: '4-Bedroom mansionettes(duplex)',
           images: [f3Image1, f3Image2],
-          description: `This is the description of project 1. ${'Exercitation sunt anim nostrud elit magna non proident id sit quis sint ea pariatur. Aliquip cillum enim incididunt pariatur mollit aliqua anim voluptate adipisicing. Reprehenderit aliqua nulla qui et consectetur elit consectetur sit pariatur quis laboris duis ad. Quis proident exercitation velit laboris excepteur labore dolore quis nostrud pariatur aute elit veniam aute. Lorem laboris incididunt excepteur ea ad mollit nostrud ex nulla ex reprehenderit. Sunt magna reprehenderit et aliquip. Culpa aute non laboris laborum nulla in est eu mollit enim ipsum adipisicing labore.'}`,
+          description: `Nestled within a contemporary enclave, these 4-bedroom flat-roofed duplex mansionettes redefine modern living with their sleek design and efficient use of space.
+          Each mansionette boasts a minimalist and chic exterior, characterized by clean lines, large windows, and a distinctive flat roof`,
           budget: '$100,000',
           location: 'Syokimau, Kenya',
         },
-        // Add more projects for 'Family homes' as needed
+       
       ],
     },
     {
@@ -225,25 +228,25 @@ import {
         {
           title: '1-bedroomed and 2-bedroomed units',
           images: [cImage1, cImage2],
-          description: 'This is the description of project 1.',
+          description: 'Re-imagine community living. Choose from a range of apartment layouts, from cozy one-bedroom units to expansive penthouses with breathtaking views. Each unit boasts well-appointed bedrooms, modern bathrooms, and ample storage space. Accompany the apartment blocks with a range of amenities for residents to enjoy, including a fitness center, a rooftop terrace with panoramic city views, and secure parking facilities. A dedicated concierge service ensures that residents needs are met with the utmost care and efficiency.',
           budget: '$200,000',
           location: 'Ruiru, Kenya',
         },
         {
           title: 'Hotel',
           images: [c1Image2, c1Image1],
-          description: 'This is the description of project 1.',
+          description: 'We take pride in our eco-conscious initiatives. This is applied in the design of commercial building to maximize our clients investment as well their guesta. With interventions from energy-saving technologies to modern building technologies,to responsible sourcing, we strive to minimize our environmental impact while delivering an exceptional experience.',
           budget: '$200,000',
           location: 'City B',
         },
         {
-          title: 'Project 3',
+          title: 'Typical apartment buildfing',
           images: [c2Image1, c2Image2],
-          description: 'This is the description of project 1.',
+          description: 'Re-imagine community living. Choose from a range of apartment layouts, from cozy one-bedroom units to expansive penthouses with breathtaking views. Each unit boasts well-appointed bedrooms, modern bathrooms, and ample storage space. Accompany the apartment blocks with a range of amenities for residents to enjoy, including a fitness center, a rooftop terrace with panoramic city views, and secure parking facilities. A dedicated concierge service ensures that residents needs are met with the utmost care and efficiency.',
           budget: '$200,000',
           location: 'City B',
         },
-        // Add more projects for 'Commercials' as needed
+       
       ],
     },
     {
@@ -254,14 +257,14 @@ import {
         {
           title: 'Church',
           images: [iImage1, iImage2],
-          description: 'This is the description of project 1.',
+          description: 'We take pride in our eco-conscious initiatives. This is applied in the design of commercial building to maximize our clients investment as well their guesta. With interventions from energy-saving technologies to modern building technologies,to responsible sourcing, we strive to minimize our environmental impact while delivering an exceptional experience.',
           budget: '$200,000',
           location: 'City B',
         },
-        // Add more projects for 'Institutions' as needed
+        
       ],
     },
-    // Add more titles and projects as needed
+    
   ];
 
   export const contact = {
@@ -286,11 +289,11 @@ import {
       },
       {
         icon: <FaLinkedinIn  />,
-        href: '#',
+        href: 'https://www.linkedin.com/company/cosmoplan-consultants/',
       },
       {
         icon: <IoLogoFacebook />,
-        href: '#',
+        href: 'https://www.facebook.com/profile.php?id=61551637924199&mibextid=ZbWKwL',
       },
     ],
     copyright: 'cosmoplan 2023 - All Rights Reserved.',
